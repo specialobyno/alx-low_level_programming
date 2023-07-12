@@ -3,13 +3,14 @@
 /**
  * _strdup - Main Entry
  * @str: input
- * Return: pointer to new string
+ * Return: 0
  */
 char *_strdup(char *str)
 {
 	char *nstr;
 	unsigned int len, i;
 
+	/* check is str is null */
 	if (str == NULL)
 	{
 		return (NULL);
@@ -34,6 +35,5 @@ char *_strdup(char *str)
 		nstr[i] = str[i];
 	}
 	nstr[len] = '\0';
-    free(nstr);
-    return (nstr);
+	return (nstr);
 }
