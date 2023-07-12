@@ -1,17 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
 /**
  * creat_array - creates an array of chars,
  * and initializes it with a specific char
- * @size -
- * @c - 
+ * @size: - input size
+ * @c: - input char
  * Return: NULL if size is 0, or pointer to the array
 */
-
 char *create_array(unsigned int size, char c)
 {
-        char *arr;
+		char *arr;
 		unsigned int i;
 
 		if (size == 0)
