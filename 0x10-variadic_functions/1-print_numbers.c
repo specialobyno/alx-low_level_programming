@@ -8,9 +8,9 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+    unsigned int i;
     va_list op;
     va_start(op, n);
-    unsigned int i;
     if (separator == NULL)
         {
             for (i = 0; i < n; ++i)
