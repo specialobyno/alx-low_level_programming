@@ -1,22 +1,23 @@
 #include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 
 /**
- * list_len - function that returns the number of 
- * elements in a linked list
- * @h: the pointer to the list_t list
+ * list_len - function that check the 
+ * code for Holberton School students.
+ * @h: the name of the list
  * 
- * Return: number of elements in h
+ * Return: the number of nodes.
  */
 
 size_t list_len(const list_t *h)
 {
-	size_t counter = 0;
+	int i = 0;
 
 	while (h)
 	{
-		counter++;
+		i++;
 		h = h->next;
 	}
-	return (counter);
+	return (i);
 }
